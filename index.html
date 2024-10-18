@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    
+    <!--Home section-->
+    <section class="home-section">
+
+        <!--carousel-->
+
+        <div class="carousel">
+
+            <img src="img/img2.png" class="active" alt="">
+            <img src="img/Generation.png" alt="">
+            <img src="img/Inserir um título.png" alt="">
+            <img src="img/Design sem nome (7).png" alt="">
+
+
+
+        </div>
+        <!--playlist-->
+
+        <h1 class="heading">Recently Played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/gen.png" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">Generation</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/warrior.png" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name"> Fight for a Future</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/7.jpg" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">Loyalty and Friendship</p>
+            </div>
+           
+            <div class="playlist-card">
+                <img src="img/circle.png" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">Generation</p>
+            </div>
+        </div>
+
+
+
+        <h1 class="heading">Based on yout listening</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="img/1.jpg" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">9to5Blues</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/Design sem nome (6).png" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name"> Enough for the shameful lie</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/Design sem nome (3).png" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">Thinking about the other side.mp3</p>
+            </div>
+            <div class="playlist-card">
+                <img src="img/10.jpeg" class="playlist-card-img" alt="" />
+                <p class="playlist-card-name">Another soul</p>
+            </div>
+           
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="music-player-section active">
+
+        <img src="img/back.png" class="back-btn icon hide"/>
+        <img src="img/nav.png" class="nav-btn icon hide"/>
+
+
+        <h1 class="current-song-name">Generation</h1>
+        <p class="artist-name hide">Medicine X</p>
+        <img src="img/1.jpg" class="cover hide" alt=""/>
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+
+
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <span class="fas fa-volume-up volume-button"></span> <!-- Botão de volume -->
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+        </div>
+        
+
+
+    </section>
+
+    <section class="playlist active ">
+
+        <img src="img/back.png" class="back-btn icon" alt=""/>
+
+        <h1 class="title">playlist</h1>
+
+        <div class="queue active">
+
+            <div class="queue-cover">
+                <img src="img/gen.png" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Generation</p>
+        </div>
+
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/warrior.png" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Fight For A Future</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/7.jpg" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Loyalty And Friendship</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/circle.png" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Rebellious Hearts</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/1.jpg" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">9to5blues</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/Design sem nome (6).png" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Enough for the shameful lie</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/Design sem nome (3).png" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Thinking about the other side</p>
+        </div>
+        <div class="queue">
+
+            <div class="queue-cover">
+                <img src="img/10.jpeg" alt=""/>
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Another Soul</p>
+        </div>
+
+
+
+    </section>
+
+    <audio src="" id="audio-source"></audio>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
